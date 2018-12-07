@@ -1,3 +1,4 @@
+dist: xenial
 language: python
 cache: pip
 sudo: required
@@ -16,10 +17,10 @@ script:
 # docker run -it --rm ruby bash
 # gem install travis
 # travis encrypt -r ome/zeroc-ice-py-ubuntu1404 $GITHUB_KEY
-#deploy:
-#  provider: releases
-#  api_key:
-#    secure: "E+f6W03qdSXM9N0u3Rxp5bvNJi5v06xOxyH1R2eRzbAb6mfGmI1JNJ0GZVN5FDwdCLzu7qAQWtAk9q+FfCgGauEiQ+iDN6D4oElWX/r4C1DX3OgcEuJlVePydnr1egYfKaq/PdTOdmHomnT5B8V0Mz8UMunr+pmSttRhgNUooMUdswXCxgKzeFz9nQl7AwepOShEMOE7LSKSZbz/J12ubeCfP1KNGiRseouLltP7arsdoRXWWz/jm94KJtnrxtS/ca8faOgLRNQADGR1j67uPFhGC6ZPertMt2QqjUfZ27Ez6SCff/XhXUbv3rGHaZ/CneaeAZgoySfowK2eKlogvf6S8PzFE64Uc3wNWdIkvx0Gecz4NcIOOBxo/YGHJHdu+M7dJBnhRuMc+ag7zjHqU6YrZVj/fNio5fYieWTHA5P1Mb/bgYE7mpiDaUAsSk454+KTqNaAM7+4BzjyXJAu+KyTH7BUjxopVShiP5R3ea/rWBLsdK1itR0VYsBN/vblrMuUIcdnQT9A4EUfyXtI8UoIiPE0fUOeYwjrOM945r49C8fL+OQ0wm8G4hmsdzHbllGPlaHngvBPGuxsYeNixyiqluye2ZKQfzp8TYEyoCi2ggTl/UAmx9OLbV4R4aWvAXzBxE8zo5a3bSojcBduwGbhQ9rcGZHS6tOLrwkebAo="
-#  skip_cleanup: true
-#  on:
-#    tags: true
+deploy:
+  provider: releases
+  api_key:
+    secure: "E+f6W03qdSXM9N0u3Rxp5bvNJi5v06xOxyH1R2eRzbAb6mfGmI1JNJ0GZVN5FDwdCLzu7qAQWtAk9q+FfCgGauEiQ+iDN6D4oElWX/r4C1DX3OgcEuJlVePydnr1egYfKaq/PdTOdmHomnT5B8V0Mz8UMunr+pmSttRhgNUooMUdswXCxgKzeFz9nQl7AwepOShEMOE7LSKSZbz/J12ubeCfP1KNGiRseouLltP7arsdoRXWWz/jm94KJtnrxtS/ca8faOgLRNQADGR1j67uPFhGC6ZPertMt2QqjUfZ27Ez6SCff/XhXUbv3rGHaZ/CneaeAZgoySfowK2eKlogvf6S8PzFE64Uc3wNWdIkvx0Gecz4NcIOOBxo/YGHJHdu+M7dJBnhRuMc+ag7zjHqU6YrZVj/fNio5fYieWTHA5P1Mb/bgYE7mpiDaUAsSk454+KTqNaAM7+4BzjyXJAu+KyTH7BUjxopVShiP5R3ea/rWBLsdK1itR0VYsBN/vblrMuUIcdnQT9A4EUfyXtI8UoIiPE0fUOeYwjrOM945r49C8fL+OQ0wm8G4hmsdzHbllGPlaHngvBPGuxsYeNixyiqluye2ZKQfzp8TYEyoCi2ggTl/UAmx9OLbV4R4aWvAXzBxE8zo5a3bSojcBduwGbhQ9rcGZHS6tOLrwkebAo="
+  skip_cleanup: true
+  on:
+    tags: true
