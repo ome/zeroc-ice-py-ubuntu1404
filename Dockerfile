@@ -27,4 +27,4 @@ RUN pip install wheel
 RUN pip install --upgrade pip
 RUN mkdir /dist
 ADD build.sh /
-CMD ["/build.sh", "3.6.4"]
+CMD ["/build.sh"]
